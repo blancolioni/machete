@@ -1,0 +1,16 @@
+project_name = Machete
+source_dir = src
+source_dir = src/compiler
+source_dir = src/driver
+source_dir = src/io
+source_dir = src/machine
+source_dir = src/memory
+source_dir = src/parser
+source_dir = src/terms
+depend = { project = WLib version = any }
+depend = { project = GCS version = any }
+main_unit = machete-driver
+exec_name = machete
+config_dir = config
+path_unit = { unit = Machete.Paths path = src/driver/machete-paths.ads }
+post_install = "machete --self-test"
