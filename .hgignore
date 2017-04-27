@@ -1,0 +1,9 @@
+syntax: glob
+build/*
+*~
+*.gpr
+*.orig
+logos.log
+src/driver/logos-paths.ads
+audley.log
+src/driver/audley-paths.ads
