@@ -2,7 +2,6 @@ project_name = Machete
 source_dir = src
 source_dir = src/compiler
 source_dir = src/driver
-source_dir = src/io
 source_dir = src/machine
 source_dir = src/memory
 source_dir = src/parser
