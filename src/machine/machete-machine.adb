@@ -388,7 +388,8 @@ package body Machete.Machine is
                   declare
                      Value : constant Machete.Cells.Cell_Type :=
                                Machine.Memory.Get_Cell
-                                 (Machine.Get_Register_Address (1));
+                                 (Machine.Memory.Dereference
+                                    (Machine.Get_Register_Address (1)));
                   begin
                      if (not Machete.Cells.Is_Functor (Value)
                          or else Machete.Functors.Arity
